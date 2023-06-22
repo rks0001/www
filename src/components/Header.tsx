@@ -23,7 +23,7 @@ const Header = () => {
   };
 
   return (
-    <div className="mainlogosec">
+    <div className="mainsec">
       <nav className=" navbarmain navbar navbar-expand-lg ">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
@@ -57,7 +57,10 @@ const Header = () => {
 
           <div className="cart">
             <FaShoppingCart style={iconStyles} />
-            <span className="icontext">Cart</span>
+            <span className="icontext">
+              {" "}
+              <Link to="/checkout">Cart</Link>
+            </span>
           </div>
           <div>
             <Button className="signupbtn" onClick={handleOpen}>
@@ -68,7 +71,7 @@ const Header = () => {
           </div>
         </div>
       </nav>
-      <div className="secondheader">
+      {/* <div className="secondheader">
         <div className="medcareitems">
           <Link to="/allopathic">Allopathic Medicines</Link>
         </div>
@@ -104,7 +107,7 @@ const Header = () => {
         <div className="medcareitems">Fitness & Supplements</div>
         <Link to="/allopathic"></Link>
         <div className="medcareitems">Mobility and Support</div>
-      </div>
+      </div> */}
     </div>
   );
 };

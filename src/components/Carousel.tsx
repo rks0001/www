@@ -1,8 +1,7 @@
 import React from "react";
-import med from "../images/banner1.png";
 import "../styles/Carousel.css";
 
-const Carousel = () => {
+const Carousel = (props: any) => {
   return (
     <div className="section">
       <div
@@ -12,15 +11,27 @@ const Carousel = () => {
       >
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src={med} className="d1 carou1 d-block w-100" alt="..." />
+            <img
+              src={props.medimg}
+              className="d1 carou1 d-block w-100"
+              alt="..."
+            />
             {/* <div className="d1 d-block w-100"></div> */}
           </div>
           <div className="carousel-item">
-            <img src={med} className="d1 carou1 d-block w-100" alt="..." />
+            <img
+              src={props.medimg}
+              className="d1 carou1 d-block w-100"
+              alt="..."
+            />
             {/* <div className="d1 d-block w-100"></div> */}
           </div>
           <div className="carousel-item">
-            <img src={med} className="d1 carou1 d-block w-100" alt="..." />
+            <img
+              src={props.medimg}
+              className="d1 carou1 d-block w-100"
+              alt="..."
+            />
             {/* <div className="d1 d-block w-100"></div> */}
           </div>
         </div>

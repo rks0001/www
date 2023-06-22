@@ -1,14 +1,12 @@
-import React from "react";
-import Header from "../components/Header";
 import Carousel from "../components/Carousel";
 import Categories from "../components/Categories";
-import Footer from "../components/Footer";
-import Section1 from "./Section1";
+
+import med from "../images/banner1.png";
 
 const Home = () => {
   return (
     <div>
-      <Carousel />
+      <Carousel medimg={med} />
       {/* <Section1 /> */}
       <Categories />
     </div>
